@@ -5,13 +5,13 @@ all: pc.tar.gz
 
 pc.img: alliances-core-desktop-amd64.model $(EXTRA_SNAPS)
 	rm -rf img/
-	ubuntu-image snap --output-dir img --image-size 20G \
+	UBUNTU_STORE_AUTH=$(cat store.auth) ubuntu-image snap --output-dir img --image-size 20G \
 	  $(foreach snap,$(ALL_SNAPS),--snap $(snap)) $<
 	mv img/pc.img .
 
 pc-dangerous.img: alliances-core-desktop-amd64-dangerous.model $(EXTRA_SNAPS)
 	rm -rf dangerous/
-	ubuntu-image snap --output-dir dangerous --image-size 20G \
+	UBUNTU_STORE_AUTH=$(cat store.auth) ubuntu-image snap --output-dir dangerous --image-size 20G \
 	  $(foreach snap,$(ALL_SNAPS),--snap $(snap)) $<
 	mv dangerous/pc.img pc-dangerous.img
 
