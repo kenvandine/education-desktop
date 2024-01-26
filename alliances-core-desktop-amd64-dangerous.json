@@ -101,57 +101,37 @@
             "name": "loupe",
             "default-channel": "latest/stable",
             "type": "app",
-            "id": "Si21Q1kjaZpyJ8TfGbAnxJ4y6KMv7FuW",
-            "presence": "optional"
+            "id": "Si21Q1kjaZpyJ8TfGbAnxJ4y6KMv7FuW"
         },
         {
             "name": "evince",
             "default-channel": "latest/stable",
             "type": "app",
-            "id": "EDFg87ESUg9sAIlm0Vm5Wmr0LjiEonSm",
-            "presence": "optional"
+            "id": "EDFg87ESUg9sAIlm0Vm5Wmr0LjiEonSm"
         },
         {
             "name": "firefox",
             "default-channel": "latest/stable/ubuntu-23.10",
             "type": "app",
-            "id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk",
-            "presence": "optional"
+            "id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk"
         },
         {
             "name": "gnome-calculator",
             "default-channel": "latest/stable",
             "type": "app",
-            "id": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG",
-            "presence": "optional"
-        },
-        {
-            "name": "gnome-characters",
-            "default-channel": "latest/stable",
-            "type": "app",
-            "id": "qJcS3UjpF9AMJKWAiKwA5EWbm0y6Uduw",
-            "presence": "optional"
-        },
-        {
-            "name": "gnome-clocks",
-            "default-channel": "latest/stable",
-            "type": "app",
-            "id": "8NtSF2nXW6krsxbXBYydy1j985k6ZsVK",
-            "presence": "optional"
+            "id": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG"
         },
         {
             "name": "gnome-logs",
             "default-channel": "latest/stable",
             "type": "app",
-            "id": "kIMfmZTJspWa8vtfbgU3W9Nbv4V5Qgmh",
-            "presence": "optional"
+            "id": "kIMfmZTJspWa8vtfbgU3W9Nbv4V5Qgmh"
         },
         {
             "name": "gnome-text-editor",
             "default-channel": "latest/stable",
             "type": "app",
-            "id": "PZj2sEabMQrVUV1HKZmmmXSk3E6wKC9i",
-            "presence": "optional"
+            "id": "PZj2sEabMQrVUV1HKZmmmXSk3E6wKC9i"
         },
         {
             "name": "snapd-desktop-integration",
@@ -169,8 +149,7 @@
             "name": "gnome-system-monitor",
             "default-channel": "latest/stable",
             "type": "app",
-            "id": "9BTClmjz31r0UltmbJ5nnGe0Xm1AzfMp",
-            "presence": "optional"
+            "id": "9BTClmjz31r0UltmbJ5nnGe0Xm1AzfMp"
         },
         {
             "name": "ubuntu-core-desktop-init",

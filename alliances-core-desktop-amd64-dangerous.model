@@ -82,49 +82,31 @@ snaps:
     default-channel: latest/stable
     id: Si21Q1kjaZpyJ8TfGbAnxJ4y6KMv7FuW
     name: loupe
-    presence: optional
     type: app
   -
     default-channel: latest/stable
     id: EDFg87ESUg9sAIlm0Vm5Wmr0LjiEonSm
     name: evince
-    presence: optional
     type: app
   -
     default-channel: latest/stable/ubuntu-23.10
     id: 3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk
     name: firefox
-    presence: optional
     type: app
   -
     default-channel: latest/stable
     id: J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG
     name: gnome-calculator
-    presence: optional
-    type: app
-  -
-    default-channel: latest/stable
-    id: qJcS3UjpF9AMJKWAiKwA5EWbm0y6Uduw
-    name: gnome-characters
-    presence: optional
-    type: app
-  -
-    default-channel: latest/stable
-    id: 8NtSF2nXW6krsxbXBYydy1j985k6ZsVK
-    name: gnome-clocks
-    presence: optional
     type: app
   -
     default-channel: latest/stable
     id: kIMfmZTJspWa8vtfbgU3W9Nbv4V5Qgmh
     name: gnome-logs
-    presence: optional
     type: app
   -
     default-channel: latest/stable
     id: PZj2sEabMQrVUV1HKZmmmXSk3E6wKC9i
     name: gnome-text-editor
-    presence: optional
     type: app
   -
     default-channel: latest/edge/ubuntu-core-desktop
@@ -140,7 +122,6 @@ snaps:
     default-channel: latest/stable
     id: 9BTClmjz31r0UltmbJ5nnGe0Xm1AzfMp
     name: gnome-system-monitor
-    presence: optional
     type: app
   -
     default-channel: latest/stable
@@ -157,13 +138,13 @@ store: uF39tRN2sG5fzDSfDAJd
 timestamp: 2024-01-25T17:07:53+00:00
 sign-key-sha3-384: uNftloYUl30RsflDHq6b7V_XY6b-IT7eu6Z2OSZQg0_w_lZ4red_IdsIceYHZIe_
 
-AcLBcwQAAQoAHRYhBA9wjbx07DDPfAZ+VYs8NqULzwyeBQJlspc4AAoJEIs8NqULzwyeUzkQALBy
-6BcSXjkw4Cj7Nqd4OcY+0U9d3QF9Pkycrmq9XN0jPm0LhrmmDgeRWk6ePW6V1Y6FWTcbzdn01J5E
-ezWavNtgklOornsRyJs5iT4t6fDivMIqLOFjq9Dbs7K62wgk5Gb98WeJunH4mD+auTV2OEtlUTMG
-ijhG25WeDi5suiAW87hSgpcp2ST7jWZ42fCbxjsjDWGhu5dPQjWBWMj8lWh5/DFR+io+lv5+Fg+g
-CnTVbRYf9lOumzg5zO5AA0Gd4Y9coWHTXfR0E6WnYVSEMjHtfM4OCzqt0xD/1N0EgO1DUM2DibCa
-uLSygwI/9IXusGBavmHqXKDuZB2pgJxuJjYtX8Mof3tGSl9C8HXKKpIHTJ3EkfTXpN/PgMVztObj
-tcuS8JQfMaxVP7V8UBG1NiWXmicOCsn6/kr5aeULt9rbfrBfDt26yMsU8bVTXQ8ChX+oTK41pzr8
-lPp+EAGZSfa8k3Mu5f0L39XAS4yi0Gp5sPhH+2683cOf/Lr3HyMTe0lhbkPgx0uay7zBA2rZdIMd
-6LdYRyOXqGrTDQX7mgCdvAYeKwn8Og1heYbhuIIh67hVt/deKVtCBsJ0d+WnEiByz9T6Z8KYkIOH
-SmwFHMYv03KuGMRHvkPYLD0a1ng4GzzWuG2OL9MSLHKIP9PcjO7n9o6dc64f79F3X1JKmW4S
+AcLBcwQAAQoAHRYhBA9wjbx07DDPfAZ+VYs8NqULzwyeBQJlstsCAAoJEIs8NqULzwyegbsP/RhB
+HIMf/RFWYHjVrma7vw4bUCbox/NQTnl74WV/bGH6DEFmzxJCw5OynIQqvHwP79Zd+00YkMTdxZcg
+1t7OmAv1MB1wNk9YXxYam4eNklXxQo35W44nVfh53/EnkYui/gl/BDt7x+S0ot1afZw2ILCVvtV1
+2JR4rw7Cycn2AsX8VotxmWKa/D7A85zMiaLA6UEIrCyoAxbb+NbCNX3eYpXyQLlSKVKo8ZD0cyY7
+UWKyflmDd9k7oL7inV+NkVXq9hyjZVTfphpqlrQvrN/x5D2D/vZc/nuHttg/igYcEz8Lv+QapdVK
+2j8LeLx840lX1Y6RGrMdYF/UO44CAEe9idXsFhUCuAo++fMfS4njVKLjXntsg3LOmNSFkeH/IzwD
+VniPYrn85HdcG2RuQrjGkplEDZbWpSk3BwjgswaBZ/D/9ppwScxwPDg7ILb4P3hQ1TMDFNOzRPbn
+f8u94FwjvLk0ZG2JWDntUv6830ev+4hBKGBGS1ZjNSVAa1kZ3Aw9AxEx3kWa3S9un6HL4jIvhx7a
+KoazXCUdrgS7R0Mfk5rHy4Vqlde+gJL0oRuGLgpUi/B1yjXsI9Ha0hCvxUlBX46ECx3sgP+XXZua
+fzVUlBeuNSI/2a0hMh/tPyHGWUYg4Kgnhz3Jo835Dya2J4Jwge1/+34Pa/YNz1Ta+sjCNHUD
