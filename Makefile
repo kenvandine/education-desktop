@@ -1,6 +1,6 @@
 
 EXTRA_SNAPS =
-ALL_SNAPS = $(EXTRA_SNAPS) evince firefox gnome-calculator gnome-logs gnome-system-monitor gnome-text-editor loupe snapd-desktop-integration snap-store alliances-core-desktop-init landscape-client
+ALL_SNAPS = $(EXTRA_SNAPS) evince firefox gnome-calculator gnome-logs gnome-system-monitor gnome-text-editor loupe snapd-desktop-integration snap-store ubuntu-core-desktop-init landscape-client
 all: pc.tar.gz
 
 pc.img: alliances-core-desktop-amd64.model
