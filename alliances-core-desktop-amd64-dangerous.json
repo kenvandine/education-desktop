@@ -8,7 +8,7 @@
     "display-name":"Alliances Core Desktop (amd64)",
     "architecture": "amd64",
     "revision": "0",
-    "timestamp": "2024-01-25T17:07:53+00:00",
+    "timestamp": "2024-01-30T22:31:33+00:00",
     "grade": "dangerous",
     "storage-safety": "prefer-encrypted",
     "base": "core22-desktop",
