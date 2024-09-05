@@ -1,20 +1,27 @@
 
 EXTRA_SNAPS =
-ALL_SNAPS = $(EXTRA_SNAPS) evince firefox gnome-calculator gnome-logs gnome-system-monitor gnome-text-editor loupe snapd-desktop-integration snap-store ubuntu-core-desktop-init landscape-client
+ALL_SNAPS = $(EXTRA_SNAPS) snapd-desktop-integration ubuntu-desktop-init firefox
 all: pc.tar.gz
 
-pc.img: alliances-core-desktop-amd64.model
+education-desktop.img: education-desktop-amd64.model
 	rm -rf img/
-	UBUNTU_STORE_AUTH=$(shell cat store.auth) ubuntu-image snap --output-dir img --image-size 20G $<
-	mv img/pc.img .
-
-pc-dangerous.img: alliances-core-desktop-amd64-dangerous.model $(EXTRA_SNAPS)
-	rm -rf dangerous/
-	UBUNTU_STORE_AUTH=$(shell cat store.auth) ubuntu-image snap --output-dir dangerous --image-size 20G \
-	  $(foreach snap,$(ALL_SNAPS),--snap $(snap)) $<
-	mv dangerous/pc.img pc-dangerous.img
+	UBUNTU_STORE_AUTH=$(shell cat store.auth) ubuntu-image snap --output-dir img --image-size 25G $<
+	mv img/pc.img education-desktop.img
 
 %.tar.gz: %.img
 	tar czSf $@ $<
+
+education-desktop.img.xz: education-desktop.img
+	xz --force --threads=0 -vv $<
+
+education-desktop-installer.img: education-desktop.img.xz
+	-rm -rf output/
+	cat image/install-sources.yaml.in |sed "s/@SIZE@/$(shell stat -c%s education-desktop.img.xz)/g" > image/install-sources.yaml
+	sudo ubuntu-image classic --debug -O output/ image/core-desktop.yaml
+	sudo chown -R $(shell id -u):$(shell id -g) output
+	mv output/education-desktop-installer.img .
+
+education-desktop-installer.img.xz: education-desktop-installer.img
+	xz --force --threads=0 -vv $<
 
 .PHONY: all

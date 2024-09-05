@@ -1,0 +1,12 @@
+- default: true
+  description:
+    en: Education Desktop.
+  id: education-desktop
+  locale_support: none
+  name:
+    en: Education Desktop
+  path: education-desktop.img.xz
+  type: dd-xz:file
+  size: 2565379176
+  variant: core 
+

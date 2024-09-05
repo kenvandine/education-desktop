@@ -1,0 +1,83 @@
+name: education-desktop-installer
+display-name: Education Desktop
+revision: 1
+architecture: amd64
+series: mantic
+class: preinstalled
+kernel: linux-image-generic
+gadget:
+  url: "https://git.launchpad.net/~canonical-foundations/snap-pc/+git/github-mirror-amd64"
+  branch: classic
+  type: "git"
+rootfs:
+  components:
+    - main
+    - restricted
+  seed:
+    urls:
+      - "git://git.launchpad.net/~ubuntu-core-dev/ubuntu-seeds/+git/"
+    branch: mantic
+    names:
+      - minimal
+customization:
+  cloud-init:
+    user-data: |
+      #cloud-config
+      chpasswd:
+        expire: false
+        users:
+          - name: ubuntu
+            password: ubuntu
+            type: text
+    meta-data: |
+      #cloud-config
+      dsmode: local
+      instance_id: education-desktop-installer
+  extra-packages:
+    - name: plymouth-theme-spinner
+    - name: squashfs-tools
+    - name: snapd
+    - name: cloud-init
+    - name: lshw
+    - name: yaru-theme-gtk
+    - name: gsettings-desktop-schemas
+  extra-snaps:
+    - name: ubuntu-core-desktop-installer
+    - name: core22
+    - name: snapd
+  manual:
+    make-dirs:
+      - path: /cdrom/casper
+        permissions: 0755
+      - path: /etc/systemd/system/snap.ubuntu-core-desktop-installer.miriway.service.d
+        permissions: 0755
+      - path: /etc/gtk-3.0
+        permissions: 0755
+    copy-file:
+      - source: 99-custom-networking.cfg
+        destination: /etc/cloud/cloud.cfg.d/99-custom-networking.cfg
+      - source: install-sources.yaml
+        destination: /cdrom/casper/install-sources.yaml
+      - source: autoinstall.yaml
+        destination: /autoinstall.yaml
+      - source: ../education-desktop.img.xz
+        destination: /cdrom/casper/education-desktop.img.xz
+      - source: casper.service
+        destination: /lib/systemd/system/casper.service
+      - source: casper-stop
+        destination: /sbin/casper-stop
+      - source: casper-enable
+        destination: /sbin/casper-enable
+      - source: override.conf
+        destination: /etc/systemd/system/snap.ubuntu-core-desktop-installer.miriway.service.d/override.conf
+      - source: gtk-3.0-settings.ini
+        destination: /etc/gtk-3.0/settings.ini
+    execute:
+      - path: /usr/bin/systemd-machine-id-setup
+      - path: /sbin/casper-enable
+artifacts:
+  img:
+    -
+      name: education-desktop.img
+  manifest:
+    name: education-desktop-installer.manifest

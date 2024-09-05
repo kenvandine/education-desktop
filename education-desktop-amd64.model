@@ -1,0 +1,125 @@
+type: model
+authority-id: canonical-alliances-demo
+series: 16
+brand-id: canonical-alliances-demo
+model: education-desktop-amd64
+architecture: amd64
+base: core24-desktop
+display-name: Ubuntu Education (amd64)
+grade: signed
+snaps:
+  -
+    default-channel: latest/stable
+    id: mZqHskGgGDECRCKP7h7ef3Rl2wTwyNfy
+    name: alliances-pc-desktop
+    type: gadget
+  -
+    default-channel: 24-hwe/stable
+    id: pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza
+    name: pc-kernel
+    type: kernel
+  -
+    default-channel: latest/edge/ubuntu-core-desktop
+    id: PMrrV4ml8uWuEUDBT8dSGnKUYbevVhc4
+    name: snapd
+    type: snapd
+  -
+    default-channel: latest/stable
+    id: GY5GohJ4F1ZsWpkosG0joeZyDfHzTZrD
+    name: core24-desktop
+    type: base
+  -
+    default-channel: 24/stable
+    id: LVkazk0JLrL0ivuHRlv3wp3bK1nAgwtN
+    name: ubuntu-desktop-session
+    type: app
+  -
+    default-channel: latest/stable
+    id: dwTAh7MZZ01zyriOZErqd1JynQLiOGvM
+    name: core24
+    type: base
+  -
+    default-channel: latest/stable
+    id: amcUKQILKXHHTlmSa7NMdnXSx02dNeeT
+    name: core22
+    type: base
+  -
+    default-channel: 24/stable
+    id: RmBXKl6HO6YOC2DE4G2q1JzWImC04EUy
+    name: network-manager
+    type: app
+  -
+    default-channel: latest/stable
+    id: EISPgh06mRh1vordZY9OZ34QHdd7OrdR
+    name: bare
+    type: base
+  -
+    default-channel: latest/stable
+    id: jZLfBRzf1cYlYysIjD2bwSzNtngY0qit
+    name: gtk-common-themes
+    type: app
+  -
+    default-channel: latest/stable
+    id: lATO8HzwVvrAPrlZRAWpfyrJKlAJrZS3
+    name: gnome-42-2204
+    type: app
+  -
+    default-channel: latest/stable
+    id: m1eQacDdXCthEwWQrESei3Zao3d5gfJF
+    name: cups
+    type: app
+  -
+    default-channel: latest/stable
+    id: WJKWBUuCDufOFw2p24tvkbbw02plGkbd
+    name: ipp-usb
+    type: app
+  -
+    default-channel: 24/stable
+    id: dVK2PZeOLKA7vf1WPCap9F8luxTk9Oll
+    name: avahi
+    type: app
+  -
+    default-channel: 24/stable
+    id: JmzJi9kQvHUWddZ32PDJpBRXUpGRxvNS
+    name: bluez
+    type: app
+  -
+    default-channel: latest/edge/ubuntu-core-desktop
+    id: IrwRHakqtzhFRHJOOPxKVPU0Kk7Erhcu
+    name: snapd-desktop-integration
+    type: app
+  -
+    default-channel: latest/candidate
+    id: tBdYpKjXcW5farGGJaWiYXrxIwMVMtx5
+    name: ubuntu-desktop-init
+    type: app
+  -
+    default-channel: latest/stable
+    id: ffnH0sJpX3NFAclH777M8BdXIWpo93af
+    name: landscape-client
+    type: app
+  -
+    default-channel: latest/stable/ubuntu-24.04
+    id: 3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk
+    name: firefox
+    type: app
+  -
+    default-channel: latest/stable
+    id: CpUkI0qPIIBVRsjy49adNq4D6Ra72y4v
+    name: libreoffice
+    type: app
+storage-safety: prefer-encrypted
+store: uF39tRN2sG5fzDSfDAJd
+timestamp: 2024-08-28T10:19:41+00:00
+sign-key-sha3-384: uNftloYUl30RsflDHq6b7V_XY6b-IT7eu6Z2OSZQg0_w_lZ4red_IdsIceYHZIe_
+
+AcLBcwQAAQoAHRYhBA9wjbx07DDPfAZ+VYs8NqULzwyeBQJm2fAAAAoJEIs8NqULzwye9CEP/0ho
+Vu3WdEd8FLcO5o/kGPxZwtjRVK/CO1Pdca6a/xRbX5hnBNGy2m58dCDXVOpPuxG2w+KMewI5Uivy
+ptn5TnNGvfp6aBbxRIZwGgazuD+xb1TsQtyeBBbXwh8PmzFBJz6XzLWycSNys7L2MQtcjJ1jBlUw
+kWgYNxw+SGWkJsiy2NZ+mBaiCj8FYb4UT8qrVJmWnxz4xjtZ7uiwxZFatLY7sCMkwfhZiHTI+h/z
+owThfEgCLfptd9OZ9T65vQs9KgAzb4j7sdz0w5SVT9JGcQnZCB9cCb0p43/WYv1o3K0tWx4WpP/M
+GpN/gAo9yS+dwcAt92kygRsycAbI4kL9LCWT9tlOR7jAnjxx9VDWuc+T6wMPU7tGnkdVQYNmtgJN
+6eLFfV4pa3T2H8KVmBxXcoqKcRUFOoMWW7gFR6d0F2J/x46kBAw0s7Qqf7qYmFpM9j/ote9tIHe3
+xcQ3171HrenDyxcQGYkOPGJNFPmidkshvejgvXJQj63W/Yv6HHxqSUH4rmuyHEGNZXqxCErwBBuJ
+am3SPOS7xgAvFQ3PaQBk2Y5izjtWXiQAoCvY9HFPE0jh1KKcmVVr3/3jfoqh+O51mJqWqaWu/93/
+/CePX/nrZ0ArTnUGoZghZNlBYOe/Wj5l0uixpN9lkwiWRmT11NYYdwXg2aUerG1lIUc2Mx/p
