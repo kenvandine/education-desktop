@@ -3,9 +3,10 @@ EXTRA_SNAPS =
 ALL_SNAPS = $(EXTRA_SNAPS) snapd-desktop-integration ubuntu-desktop-init firefox gnome-calculator gnome-text-editor evince loupe
 all: pc.tar.gz
 
-education-desktop.img: education-desktop-amd64.model
+education-desktop.img: education-desktop-amd64.model $(EXTRA_SNAPS)
 	rm -rf img/
-	UBUNTU_STORE_AUTH=$(shell cat store.auth) ubuntu-image snap --output-dir img --image-size 25G $<
+	UBUNTU_STORE_AUTH=$(shell cat store.auth) ubuntu-image snap --output-dir img \
+			  --image-size 25G  $(foreach snap,$(ALL_SNAPS),--snap $(snap)) $<
 	mv img/pc.img education-desktop.img
 
 %.tar.gz: %.img

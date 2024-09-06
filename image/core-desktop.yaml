@@ -78,6 +78,6 @@ customization:
 artifacts:
   img:
     -
-      name: education-desktop.img
+      name: education-desktop-installer.img
   manifest:
     name: education-desktop-installer.manifest
