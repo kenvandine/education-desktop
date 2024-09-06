@@ -1,6 +1,6 @@
 
 EXTRA_SNAPS =
-ALL_SNAPS = $(EXTRA_SNAPS) snapd-desktop-integration ubuntu-desktop-init firefox
+ALL_SNAPS = $(EXTRA_SNAPS) snapd-desktop-integration ubuntu-desktop-init firefox gnome-calculator gnome-text-editor evince loupe
 all: pc.tar.gz
 
 education-desktop.img: education-desktop-amd64.model

@@ -7,7 +7,7 @@
     "model": "education-desktop-amd64",
     "display-name":"Ubuntu Education (amd64)",
     "architecture": "amd64",
-    "revision": "0",
+    "revision": "1",
     "timestamp": "2024-08-28T10:19:41+00:00",
     "grade": "signed",
     "storage-safety": "prefer-encrypted",
@@ -17,7 +17,7 @@
             "name": "alliances-pc-desktop",
             "default-channel": "latest/stable",
             "type": "gadget",
-            "id": "mZqHskGgGDECRCKP7h7ef3Rl2wTwyNfy"
+            "id": "MLMMpT9vbUvF5F3efxA3KcY58ZkXU16a"
         },
         {
             "name": "pc-kernel",
@@ -125,13 +125,36 @@
             "name": "firefox",
             "default-channel": "latest/stable/ubuntu-24.04",
             "type": "app",
-            "id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk"
+            "id": "3wdHCAVyZEmYsCMFDE9qt92UV8rC8Wdk",
+            "presence": "optional"
         },
         {
-            "name": "libreoffice",
+            "name": "gnome-calculator",
             "default-channel": "latest/stable",
             "type": "app",
-            "id": "CpUkI0qPIIBVRsjy49adNq4D6Ra72y4v"
+            "id": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG",
+            "presence": "optional"
+        },
+	{
+            "name": "gnome-text-editor",
+            "default-channel": "latest/stable",
+            "type": "app",
+            "id": "PZj2sEabMQrVUV1HKZmmmXSk3E6wKC9i",
+            "presence": "optional"
+        },
+	{
+            "name": "evince",
+            "default-channel": "latest/stable",
+            "type": "app",
+            "id": "EDFg87ESUg9sAIlm0Vm5Wmr0LjiEonSm",
+            "presence": "optional"
+        },
+	{
+            "name": "loupe",
+            "default-channel": "latest/stable",
+            "type": "app",
+            "id": "Si21Q1kjaZpyJ8TfGbAnxJ4y6KMv7FuW",
+            "presence": "optional"
         }
     ]
 }
