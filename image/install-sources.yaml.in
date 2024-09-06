@@ -1,7 +1,7 @@
 - default: true
   description:
-    en: Education Desktop.
-  id: education-desktop
+    en: Ubuntu Core Desktop.
+  id: ubuntu-core-desktop
   locale_support: none
   name:
     en: Education Desktop
